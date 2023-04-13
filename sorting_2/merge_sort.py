@@ -1,7 +1,7 @@
 import argparse
 
 def merge(arr, low, mid, high):
-    left, right = low, mid
+    left, right = low, mid + 1
     temp = []
 
     while left <= mid and  right <= high:
@@ -20,7 +20,6 @@ def merge(arr, low, mid, high):
         temp.append(arr[right])
         right += 1
 
-    print(temp)
     for i in range(low , high + 1):
         arr[i] = temp[i - low]
 
