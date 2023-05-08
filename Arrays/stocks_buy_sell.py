@@ -11,7 +11,6 @@ def func(arr):
         else:
             low = i
 
-
     return maxProfit
 
 if __name__ == '__main__':
